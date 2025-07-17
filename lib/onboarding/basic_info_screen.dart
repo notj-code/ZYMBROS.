@@ -1,7 +1,12 @@
 
 import 'package:flutter/material.dart';
+import 'package:gymbros/onboarding/experience_level_screen.dart';
 
 class BasicInfoScreen extends StatefulWidget {
+  final List<String> selectedGoals;
+
+  const BasicInfoScreen({Key? key, required this.selectedGoals}) : super(key: key);
+
   @override
   _BasicInfoScreenState createState() => _BasicInfoScreenState();
 }
@@ -89,7 +94,10 @@ class _BasicInfoScreenState extends State<BasicInfoScreen> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     _formKey.currentState!.save();
-                    // TODO: Navigate to the next screen
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ExperienceLevelScreen(selectedGoals: widget.selectedGoals, gender: _gender!, age: _age!, height: _height!, weight: _weight!)),
+                    );
                   }
                 },
                 child: Text('Next'),

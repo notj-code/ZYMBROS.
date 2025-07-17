@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:gymbros/onboarding/basic_info_screen.dart';
 
 class GoalSelectionScreen extends StatefulWidget {
   @override
@@ -64,7 +65,10 @@ class _GoalSelectionScreenState extends State<GoalSelectionScreen> {
             Spacer(),
             ElevatedButton(
               onPressed: _selectedGoals.isNotEmpty ? () {
-                // TODO: Navigate to the next screen
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BasicInfoScreen(selectedGoals: _selectedGoals)),
+                );
               } : null,
               child: Text('Next'),
             ),
