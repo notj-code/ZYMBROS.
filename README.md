@@ -1,4 +1,4 @@
-# Gymbro~
+# Gymbros
 
 Welcome to the AI Health Trainer app! This application is designed to help you manage your fitness journey by providing personalized workout plans, posture analysis, and community features. Whether you're a beginner or an advanced athlete, our app is here to support your health and fitness goals.
 
