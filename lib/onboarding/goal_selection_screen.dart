@@ -33,7 +33,7 @@ class _GoalSelectionScreenState extends State<GoalSelectionScreen> {
           children: [
             Text(
               'Select your fitness goals:',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
             SizedBox(height: 16.0),
             Wrap(

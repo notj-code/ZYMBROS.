@@ -34,7 +34,7 @@ class _BasicInfoScreenState extends State<BasicInfoScreen> {
               DropdownButtonFormField<String>(
                 decoration: InputDecoration(labelText: 'Gender'),
                 value: _gender,
-                items: ['Male', 'Female', 'Other'].map((String value) {
+                items: ['Male', 'Female'].map((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
                     child: Text(value),

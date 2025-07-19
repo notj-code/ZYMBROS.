@@ -38,7 +38,7 @@ class _ExperienceLevelScreenState extends State<ExperienceLevelScreen> {
           children: [
             Text(
               'How would you describe your fitness experience?',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
             SizedBox(height: 16.0),
             RadioListTile<String>(
