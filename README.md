@@ -1,4 +1,4 @@
-# gymbros
+# GYMBROS
 
 A new Flutter project.
 
